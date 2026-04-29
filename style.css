@@ -1,0 +1,115 @@
+
+/*Background colour for the page and the fonts for all the text */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+}
+
+/* header styling, colour */
+header {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+/* header title font size*/
+header h1 {
+  font-size: 3rem;
+}
+/* header paragraph information font size*/
+header p {
+  font-size: 1.4rem;
+}
+
+/* The map box width and height and colour of the box. This is what contains my world map*/
+#map-view {
+  width: 95%;
+  max-width: 1200px;
+  height: 650px;
+  margin: 2rem auto;
+  border: 2px solid #333;
+  overflow: hidden;
+
+
+  
+}
+
+/* This is so that the world map svg fits in the box */
+#map-view svg {
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* This is the styling for the lines that seperate the countries. */
+#map-view svg path {
+  fill: #cfd8dc;
+  stroke: #37474f;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: fill 0.2s ease;
+}
+/* This is the colour that non clickable countries go when hovered over*/
+#map-view svg path:hover {
+  fill: #f54242;
+}
+/* This is the colour for clickable countries and should go blue*/
+#map-view svg path.clickable:hover {
+  fill: #42a5f5; 
+}
+
+
+/* Used to switch things when something is clicked*/
+.hidden {
+  display: none;
+}
+/* Used to design my country page when a country is clicked by the user*/
+#country-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+/* left side of the country page*/
+#left {
+  flex: 1;
+  text-align: center;
+}
+/* flag image styling */
+#left img {
+  width: 300px;
+  border-radius: 6px;
+}
+
+/* right side of the country page styling*/
+#right {
+  flex: 2;
+  background: #e3f2fd;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* back button on the country page */
+#back-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.8rem 1.5rem;
+  background: #0d47a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+/* Styling for the quiz button*/
+#quiz {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.4rem;
+  background: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+ 
+}
